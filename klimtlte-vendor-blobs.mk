@@ -23,8 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klimtlte/proprietary/vendor/firmware/bcm4350_V0301.0609.hcd:system/vendor/firmware/bcm4350_V0301.0609.hcd
 
 #Sensors
-#Binary file DBT-T800XXU1BOJ1-20151023095433/system/lib/hw/sensors.universal5420.so matches
-#Binary file DBT-T800XXU1BOJ1-20151023095433/system/lib/libak09911c.so matches
 PRODUCT_COPY_FILES += \
     vendor/samsung/klimtlte/proprietary/lib/hw/sensors.universal5420.so:system/lib/hw/sensors.universal5420.so
 
@@ -34,17 +32,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klimtlte/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
     vendor/samsung/klimtlte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so
 
-#GPS - Config TODO: Move to device
-PRODUCT_COPY_FILES += \
-    vendor/samsung/klimtlte/proprietary/etc/gps.xml:system/etc/gps.xml
-
 #SSWAP - Needed?
 PRODUCT_COPY_FILES += \
     vendor/samsung/klimtlte/proprietary/sbin/sswap:root/sbin/sswap
-
-#MediaDRM
-PRODUCT_COPY_FILES_NN += \
-    vendor/samsung/klimtlte/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 #NXP Sound effect
 PRODUCT_COPY_FILES += \
